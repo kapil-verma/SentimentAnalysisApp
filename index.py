@@ -123,13 +123,13 @@ def predict():
     return output
 
 
-if __name__ == '__main__':
-    #ssl_context='adhoc'
-    # Open a HTTP tunnel on the default port 80
-    # public_url = ngrok.connect(port = '5000')
-    # print(public_url)
-    app.run(host='0.0.0.0')
+# if __name__ == '__main__':
+#     #ssl_context='adhoc'
+#     # Open a HTTP tunnel on the default port 80
+#     # public_url = ngrok.connect(port = '5000')
+#     # print(public_url)
+#     app.run(host='0.0.0.0')
     
-    # If address is in use, may need to terminate other sessions:
-    # Runtime > Manage Sessions > Terminate Other Sessions
+#     # If address is in use, may need to terminate other sessions:
+#     # Runtime > Manage Sessions > Terminate Other Sessions
             
