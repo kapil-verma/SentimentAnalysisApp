@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <script src="assets/code.js"></script>
+    <title>Review Filtering</title>
+  </head>
+      <br>
+    <div class="container main">
+  <div class="jumbotron center-block" id="holder">
+        <h2 class='main_heading'style="color: rgb(46,116,181);"> Automated Sentiment Estimation Model</h2>
+     <br>
+     <p>The model can perform: <em>Sentiment Analysis, Specll Check & Grammer Check</em>, based on the CSV input.<br>
+     <small style="color:#282828"> </small></p>
+      <h5 style="font-weight: 850;">Architecture : NLTK, TextBlob, Backend : Flask, Ngrok</h5> 
+      </p>
+
+    <div class="instructions">
+    <section class="indent-1">
+      <h3>Instructions: </h3>
+      <p>1. Chose a csv file having reviews  & click submit.
+      <small style="color:#282828">It may take upto a minute (maximum) to process text.</small>
+      </p>
+      <p>2. You will get a output CSV as a result.</p>
+      <h4>Upload your file here</h4>
+    </section>
+    </div>
+    <form enctype="multipart/form-data" style="border-radius: 8px;" class="form-horizontal" method="POST" action="/predict">
+      
+        <input type="file" name="file">
+        <br>
+        <input style="border-radius: 8px;" class="button button5" type="submit">
+    </form>
+    <br>
+  </div>
+</div>
+<br>
+<!-- Footer -->
+<footer class="page-footer font-small blue">
+
+  <div id="container" class="footer-copyright text-center py-3">
+    <div class="bottom">
+      <p></p>
+    </div>
+  </div>
+
+</footer>
+<!-- Footer -->
+  </body>
+</html>
