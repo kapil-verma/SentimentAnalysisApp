@@ -84,10 +84,10 @@ def main_fun(path):
 
 import os
 from flask import Flask,request,render_template, make_response
-from flask_ngrok import run_with_ngrok
+#from flask_ngrok import run_with_ngrok
 
-app = Flask(__name__, template_folder='/content/templates')
-run_with_ngrok(app)
+app = Flask(__name__)
+#run_with_ngrok(app)
 
 @app.route('/')
 def home():
@@ -128,7 +128,7 @@ if __name__ == '__main__':
     # Open a HTTP tunnel on the default port 80
     # public_url = ngrok.connect(port = '5000')
     # print(public_url)
-    app.run()
+    app.run(host='0.0.0.0')
     
     # If address is in use, may need to terminate other sessions:
     # Runtime > Manage Sessions > Terminate Other Sessions
